@@ -1,0 +1,18 @@
+.product-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.product {
+  margin-bottom: 1rem;
+  width: 15rem;
+  height: 20rem;
+}
+.main-page-img {
+  height: 15rem;
+  object-fit: contain;
+}

@@ -1,0 +1,23 @@
+.product-cart {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 60vw;
+  img {
+    width: 3rem;
+  }
+}
+.product-quantity-controls {
+  width: 10vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cart-item-desc {
+  display: flex;
+}
+.product-cart-title {
+  margin: 1rem 0 0 1rem;
+}
+.quantity {
+  margin-top: 0.3rem;
+}
