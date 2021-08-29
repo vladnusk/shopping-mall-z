@@ -4,7 +4,7 @@ import { CartItem } from '../store/slices/shoppingCart/shoppingCartSlice'
 
 
 const CartGrid: React.FC<{ productsList: CartItem[] }> = ({ productsList }) => {
-    console.log(productsList)
+  
     return (
         <div className="cart-grid">
 

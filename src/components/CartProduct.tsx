@@ -5,6 +5,7 @@ import { addOne, removeOne, removeFromCart, CartItem} from '../store/slices/shop
 
 
 const CartProduct = (props: CartItem) => {
+    
     const dispatch = useAppDispatch()
     return (
         <div className="product-cart">
@@ -13,9 +14,9 @@ const CartProduct = (props: CartItem) => {
         <p className="product-cart-title">{props.product.name}</p>
         </div>
         <div className="product-quantity-controls">
-            {/* <IconButton onClick={()=> dispatch(removeOne(props))} icon={MinusIcon} /> */}
-            <IconButton onClick={()=> dispatch(removeOne(props))} icon={MinusIcon} />
-            <p className="quantity">{props.quantity? props.quantity: "1" }</p>
+           
+            <IconButton onClick={()=> {props.quantity > 1 ? dispatch(removeOne(props)) : dispatch(removeFromCart(props)) }} icon={MinusIcon} />
+            <p className="quantity">{props.quantity}</p>
             <IconButton onClick={()=> dispatch(addOne(props))} icon={PlusIcon} />
         </div>
     </div>
